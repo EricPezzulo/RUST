@@ -15,15 +15,13 @@ fn main () {
     
     let num:i32 = num_guess.trim().parse().unwrap();
      println!("{}",num); 
-  if num > secret_number {
+    if num > secret_number {
         println!("Your guess is too high, the number was {secret_number}");
     }
     if num < secret_number {
         println!("Your guess is too low, the number was {secret_number}");
     }
-   if num == secret_number {
+    if num == secret_number {
        println!("Your guess is CORRECT")
-   }
-    
-
+    } 
 }
